@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var count = 0;
+      document.write("while루프 시작!!!"+"<br>");
+      while(count<5){
+        document.write(count+'<br>');
+        count++;
+      }
+      count = 0;
+
+      document.write("<br>do while루프 시작!!!"+"<br>");
+      do{
+        document.write(count+'<br>');
+        count++
+      }while(count<5);
+
+      document.write("<br>for루프 시작!!!"+"<br>");
+      for(count=0;count<5;count++){
+        document.write(count+'<br>');
+      }
+
+      document.write("<br>for in 루프 시작!!!"+"<br>");
+      var a;
+      var b = ['a','b','c','d'];
+      for(a in b){
+        document.write(b[a]+'<br>');
+      }
+    </script>
+  </body>
+</html>

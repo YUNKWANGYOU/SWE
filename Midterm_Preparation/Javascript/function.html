@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function concatenate(first,last){
+        var fullname;
+        fullname = first+last;
+        return fullname
+      }
+
+      function secondFunction(){
+        var res;
+        res = concatenate('유윤광<br>','킹왕짱!!!!!');
+        document.write(res);
+      }
+    </script>
+  </head>
+  <body>
+    <p>아래 함수 호출 버튼을 클릭해주세용</p>
+    <form class="" action="index.html" method="post">
+      <input type="button" name="함수호출버튼" value="함수호출버튼" onclick="secondFunction()">
+    </form>
+  </body>
+</html>

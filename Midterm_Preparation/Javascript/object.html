@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      function addPrice(amount){
+        this.price = amount;
+      }
+      function book(title,author){
+        this.title = title;
+        this.author = author;
+        this.addPrice = addPrice;//JS는 위에 함수를 할당해주면서 메소드를 만들어주는 형태임!
+      }
+    </script>
+  </head>
+  <body>
+      <script type="text/javascript">
+        var myBook = new book('김영하','살인자의 기억법');
+        myBook.addPrice(12000);
+        document.write("작가 : "+myBook.author+'<br>');
+        document.write("제목 : "+myBook.title+'<br>');
+        document.write("권장가격 : "+myBook.price);
+      </script>
+  </body>
+</html>

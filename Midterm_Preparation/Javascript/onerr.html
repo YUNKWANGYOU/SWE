@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      window.onerror = function(msg,url,line){
+        alert("Message : " +msg);
+        alert("URL : " +url);
+        alert("Line : " +line);
+      }
+      function myFunction(){
+        alert("Success!")
+      }
+    </script>
+  </head>
+  <body>
+    <p>Click the following to see the result: </p>
+    <form class="" action="index.html" method="post">
+      <input type="button" name="" value="myFunction() : 만들어진 함수 " onclick = 'myFunction();'/>
+      <input type="button" name="" value="myFunction2() : 없는 함수 -> 오류나야함" onclick = 'myFunction2();'/>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>여러가지 Number 객체의 method를 알아보자 (number객체는 따로 선언 없이 var = 숫자 넣으면 생성됨)</p>
+    <p id ='demo'></p>
+    <button type="button"onclick = 'myFunction()' name="button" >출력!</button>
+    <script type="text/javascript">
+      var num = 128;
+      function myFunction(){
+        document.getElementById('demo').innerHTML = '128 = ' +
+        num + ' Decimal, ' + num.toString(16) + ' Hexadecimal, ' + num.toString(8) + ' Octal, ' + num.toString(2) + ' Binary'
+      }
+      document.write("<br><br>toExponential,toFixed,valueOf 메소드 구현! <br>")
+      document.write("<br>toExponential메소드<br>")
+      var a=3;
+      var b;
+      b = a.toExponential(2);
+      document.write('a : '+a+' b : ' +b)
+
+      document.write("<br><br>toFixed 메소드 <br>")
+      var a=3.5123;
+      var b;
+      b = a.toFixed(2);
+      document.write('a : '+a+' b : ' +b)
+
+      document.write("<br><br>valueOf 메소드 <br>")
+      var a=3.4123;
+      var b;
+      b = a.valueOf(10); // 원시값 3.4123반환
+      document.write('a : '+a+' b : ' +b)
+    </script>
+  </body>
+</html>

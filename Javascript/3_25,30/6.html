@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User-defined objects</title>
+    <script type="text/javascript">
+        function addPrice(amount){
+          this.price = amount;
+        }
+        function book(title, author){
+          this.title = title;
+          this.author = author;
+          this.addPrice = addPrice;
+        }
+    </script>
+  </head>
+  <body>
+    <p>2015112173 유윤광</p>
+    <script type="text/javascript">
+      var myBook = new book("오래 준비해온 대답","김영하");
+      myBook.addPrice(100);
+
+      document.write("Book title is : " + myBook.title + "<br>");
+      document.write("Book author is : " + myBook.author + "<br>");
+      document.write("Book price is : " + myBook.price + "<br>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id = 'demo'></p>
+    <script type="text/javascript">
+      var family = new Array("yun",'kong','bae');
+      document.getElementById('demo').innerHTML = family;
+      document.write('slice method(0,1만 자르기!) : ' + family.slice(0,2)+'<br>');
+      document.write('concat method(Hey추가!): ' + family.concat('Hey','Baby')+'<br>');
+      document.write('sort method(정렬!): ' + family.sort()+'<br>');
+      document.write('pop method: ' + family.pop()+'<br>');
+      document.write('push method: ' + family.push('yun')+'<br>');
+
+    </script>
+  </body>
+
+</html>
