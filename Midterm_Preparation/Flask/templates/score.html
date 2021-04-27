@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% if marks %}
+      <h1>marks 이거 python으로부터 전달받았음.</h1>
+    {%endif%}
+    {% if marks >= 50 %}
+      <h1>너 50점 이상</h1>
+    {% elif marks >= 30 %}
+      <h1>너 30점 이상 50점 이하</h1>
+    {% else %}
+      <h1>너 뭣도아님.</h1>
+    {% endif %}
+
+    
+  </body>
+</html>
